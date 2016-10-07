@@ -1,0 +1,30 @@
+#plans,#plans ul, #plans ul li {margin: 0;padding: 0;list-style: none;}
+#pricePlans:after {content: '';	display: table;	clear: both;}
+#pricePlans {zoom: 1;}
+#pricePlans {margin: 0 auto;}
+#pricePlans #plans .plan {float: left;width: 100%;text-align: center;border-radius: 5px;margin: 0 0 20px 0;-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.1);box-shadow: 0 1px 3px rgba(0,0,0,0.1);}
+
+.planContainer .title h2 {margin: 0;padding:0;}
+.planContainer .price p {margin: 0 0 10px 0; padding:0}
+.planContainer .price p span {}
+.planContainer .options {margin-top: 10px;}
+.planContainer .options li {}
+.planContainer .button a { padding:0; text-transform: uppercase;text-decoration: none; display: inline-block;width: 80%; border-radius: 4px; margin:10px 0;}
+
+.planContainer.bestPlan .title h2{border-radius: 5px 5px 0 0;}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+#pricePlans #plans .plan {width: 49%;margin: 0 2% 20px 0;}
+#pricePlans #plans > li:nth-child(2n) {margin-right: 0;}}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+#pricePlans #plans .plan {width: 49%;margin: 0 2% 20px 0;}
+#pricePlans #plans > li:nth-child(2n) {margin-right: 0;}}
+
+@media screen and (min-width: 1025px) {
+#pricePlans {margin: 2em auto;}
+#pricePlans #plans .plan {-webkit-transition: all .25s; -moz-transition: all .25s; -ms-transition: all .25s; -o-transition: all .25s; transition: all .25s; max-width:220px}
+#pricePlans #plans > li:last-child {margin-right: 0;}
+#pricePlans #plans .plan:hover {-webkit-transform: scale(1.04); -moz-transform: scale(1.04); -ms-transform: scale(1.04); -o-transform: scale(1.04); transform: scale(1.04);}
+.planContainer .button a {-webkit-transition: all .25s;-moz-transition: all .25s; -ms-transition: all .25s; -o-transition: all .25s; transition: all .25s;}
+}

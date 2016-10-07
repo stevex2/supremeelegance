@@ -1,0 +1,422 @@
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+.hide-text {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+.input-block-level {
+  display: block;
+  width: 100%;
+  min-height: 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.nav-list>.active>a,
+.nav-list>.active>a:hover,
+.nav-list>.active>a:focus {
+  color: #475577 !important;
+  text-shadow: 0 -1px 0 rgba(0,0,0,0.2);
+  background-color: transparent;
+}
+a:not(.btn) {
+  color: #475577;
+}
+a:not(.btn):hover {
+  color: #475577;
+}
+.header {
+  color: #475577;
+}
+.text_color {
+  color: #475577;
+}
+.bg_color {
+  background: #475577;
+}
+.jshop_price {
+  color: #475577;
+}
+.tags .label {
+  background: #475577;
+}
+body {
+  color: #333333;
+}
+body.bg {
+  background: #f2f2f2;
+}
+#sp-left .module ul li:hover a {
+  color: #475577;
+}
+#sp-left .module ul .jshop_menu_level_0_a li a,
+#sp-left .module ul .jshop_menu_level_1_a li a,
+#sp-left .module ul .jshop_menu_level_2_a li a {
+  color: #475577;
+}
+#sp-left .module .jshop_menu_level_0_a a {
+  color: #475577;
+}
+#sp-left .module .jshop_menu_level_0:hover a {
+  color: #475577;
+}
+#sp-left .module .tagspopular ul li {
+  background: #475577;
+}
+#jshop_module_cart .cart-inner {
+  background-image: url(../../images/presets/preset3/bg-cart.png);
+}
+#jshop_module_cart .cart-inner .cart-view i {
+  color: #475577;
+}
+#jshop_module_cart .cart-inner .cart-view:hover i {
+  color: #212737;
+}
+#sp-menu-wrapper .sp-menu-group .sp-menu-group-title span.menu-title {
+  color: #475577;
+}
+#sp-menu-wrapper {
+  background: #475577;
+}
+#sp-menu-wrapper .vina-cmenu-jshopping > ul > li.active > a,
+#sp-menu-wrapper .vina-cmenu-jshopping > ul > li:hover > a {
+  color: #475577;
+}
+#sp-menu-wrapper .vina-cmenu-jshopping > ul > li.active:after,
+#sp-menu-wrapper .vina-cmenu-jshopping > ul > li:hover:after {
+  border-top-color: #475577;
+}
+#sp-menu-wrapper .vina-cmenu-jshopping > ul > li.active > ul:after,
+#sp-menu-wrapper .vina-cmenu-jshopping > ul > li:hover > ul:after {
+  border-bottom-color: #475577;
+}
+#sp-menu-wrapper .vina-cmenu-jshopping > ul li.has-sub > ul > li:hover > a {
+  background: #475577;
+}
+#sp-menu-wrapper .vina-cmenu-jshopping ul ul li.has-sub:hover:after {
+  border-left-color: #475577;
+}
+#sp-menu-wrapper .vina-cmenu-jshopping ul ul li.active > a {
+  color: #475577;
+}
+#sp-menu-wrapper .vina-cmenu-jshopping ul ul li.active:after {
+  border-left-color: #475577 !important;
+}
+#sp-menu-wrapper .vina-cmenu-jshopping ul ul li:hover > a {
+  color: #fff !important;
+}
+#sp-main-menu ul.level-0 > li:hover,
+#sp-main-menu ul.level-0 > li.active {
+  background-color: #475577;
+}
+#sp-main-menu ul.level-0 > li:hover > a,
+#sp-main-menu ul.level-0 > li.active > a {
+  color: #fff;
+}
+.vina-menu {
+  background: #475577 !important;
+}
+.vina-menu:hover {
+  background: #475577 !important;
+}
+.vina-menu-small {
+  background: #475577 !important;
+}
+.vina-menu-small:hover {
+  background: #475577 !important;
+}
+.sp-mobile-menu {
+  background: #000;
+}
+.sp-mobile-menu ul li a {
+  color: #fff;
+}
+.sp-mobile-menu ul li a:hover {
+  color: #475577 !important;
+}
+.sp-mobile-menu >ul >li {
+  border-bottom: 1px solid #333;
+}
+.sp-mobile-menu >ul >li:last-child {
+  border: none;
+}
+.sp-mobile-menu >ul >li ul.collapse li {
+  background: #333;
+}
+.sp-mobile-menu >ul >li ul.collapse ul li {
+  background: #444;
+}
+#sp-header-wrapper .logo {
+  background-image: url(../../images/presets/preset3/logo.png);
+}
+#sp-feature-wrapper a:not(.btn) {
+  color: #7687ae;
+}
+#sp-feature-wrapper a:not(.btn):hover {
+  color: #b6bfd4;
+}
+#sp-feature .camera_caption h3 {
+  color: #475577;
+}
+#sp-feature-wrapper #sp-feature .camera_caption a.morebutton:hover {
+  color: #475577;
+}
+#sp-feature-wrapper .vina-jssor-image-slider .vina-caption.default h3,
+#sp-feature-wrapper .vina-jssor-image-slider .vina-caption.default .vina_title {
+  color: #475577 !important;
+}
+#sp-feature-wrapper .vina-jssor-image-slider .vina-caption.default .btn {
+  background: #475577;
+}
+#sp-position2 .vina-scroller-jshopping .toolbar .left:hover i,
+#sp-position2 .vina-scroller-jshopping .toolbar .right:hover i {
+  background-color: #475577;
+}
+.online-shipping .online-shipping-wrapper:hover .img-circle {
+  background-color: #475577;
+  border-color: #475577;
+  color: #fff;
+}
+.product-hover .img-circle .buttons a {
+  color: #fff !important;
+}
+.product-hover .img-circle .buttons a:hover {
+  color: #475577 !important;
+}
+#vina-scroller-jshopping145 .slide .vina-name a {
+  color: #475577 !important;
+}
+.jshop.productfull .vina_price #block_price {
+  color: #475577;
+}
+.module.highlighted {
+  background: #3498DB;
+}
+.module.highlighted a {
+  color: #fff !important;
+}
+.page-header {
+  color: #475577;
+}
+.page-header a {
+  color: #475577;
+}
+.progress-striped .bar {
+  background-color: #475577;
+}
+#vina_about_us .carousel .item .incon_bg {
+  background: #475577;
+}
+#vina_about_us .carousel .carousel-control {
+  color: #475577;
+}
+#vina_about_us .carousel:hover .carousel-control:hover {
+  background: #475577;
+}
+#vina_about_us .skill ul li {
+  border-left: 2px solid #475577;
+}
+#vina_company .img-polaroid .info_team ul li a:hover {
+  background: #475577;
+}
+#vina_pricing_table .pricing_table .thumbnail button {
+  background: #475577;
+}
+#vina_contact_us ul.social li a {
+  border: 4px solid #96a3c1;
+  background: #475577;
+}
+#vina_contact_us ul.social li a:hover {
+  border: 4px solid #475577;
+}
+#vina_contact_us ul.social li a:hover em {
+  color: #475577;
+}
+#vina_contact_us .map span em {
+  color: #475577;
+}
+.category .items-row .item .entry-meta.muted [class^="icon-"],
+.category .items-row .item .entry-meta.muted [class*=" icon-"] {
+  color: #475577;
+}
+.vina-tag {
+  background: #475577;
+  -webkit-box-shadow: 0 4px 0 0 #343e57;
+  -moz-box-shadow: 0 4px 0 0 #343e57;
+  box-shadow: 0 4px 0 0 #343e57;
+  color: #fff !important;
+}
+.vina-tag:hover {
+  background: #475577 !important;
+}
+.vina-tag:before {
+  background: #475577;
+  -webkit-box-shadow: 0 4px 0 0 #343e57;
+  -moz-box-shadow: 0 4px 0 0 #343e57;
+  box-shadow: 0 4px 0 0 #343e57;
+}
+.vina-tag:after {
+  -webkit-box-shadow: 3px 3px 0 0 #343e57 inset;
+  -moz-box-shadow: 3px 3px 0 0 #343e57 inset;
+  box-shadow: 3px 3px 0 0 #343e57 inset;
+}
+.vina-icon ul li p:hover i {
+  color: #475577;
+}
+.vina-online .header:before {
+  color: #475577;
+}
+#login-form input[type="checkbox"]:checked  + label::after {
+  color: #475577;
+}
+#login-form input:not([type='checkbox']):active,
+#login-form input:not([type='checkbox']):focus {
+  -webkit-box-shadow: inset 8px 0 0 #475577;
+  -moz-box-shadow: inset 8px 0 0 #475577;
+  box-shadow: inset 8px 0 0 #475577;
+}
+.icon-color:before {
+  color: #475577;
+}
+.vina-news li:before {
+  color: #475577;
+}
+#sp-bottom-wrapper a:not(.btn) {
+  color: #333333;
+}
+#sp-bottom-wrapper a:not(.btn):hover {
+  color: #475577;
+  background: transparent;
+}
+#sp-bottom-wrapper li {
+  color: #475577;
+}
+#sp-footer-wrapper {
+  background: #191e23;
+  color: #fff;
+}
+#sp-footer-wrapper h3 {
+  color: #fff;
+}
+.sp-border {
+  border-top: 1px solid #000000;
+}
+.sp-border::after {
+  background: #1b212e;
+}
+.btn.social:hover {
+  background: #475577;
+}
+.btn-danger,
+.btn-primary,
+button,
+input[type='submit']:not(.vm2-add_quantity_cart),
+input[type='button'],
+submit {
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+  background-color: #475577;
+  background-image: -moz-linear-gradient(top,#475577,#475577);
+  background-image: -webkit-gradient(linear,0 0,0 100%,from(#475577),to(#475577));
+  background-image: -webkit-linear-gradient(top,#475577,#475577);
+  background-image: -o-linear-gradient(top,#475577,#475577);
+  background-image: linear-gradient(to bottom,#475577,#475577);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff475576', endColorstr='#ff475576', GradientType=0);
+  border-color: #475577 #475577 #2a3347;
+  border-color: rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
+  *background-color: #475577;
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  background-image: none;
+  box-shadow: none;
+  text-shadow: none;
+  border: 0px solid #bbb;
+}
+.btn-danger:hover,
+.btn-danger:active,
+.btn-danger.active,
+.btn-danger.disabled,
+.btn-danger[disabled],
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary.active,
+.btn-primary.disabled,
+.btn-primary[disabled],
+button:hover,
+button:active,
+button.active,
+button.disabled,
+button[disabled],
+input[type='submit']:not(.vm2-add_quantity_cart):hover,
+input[type='submit']:not(.vm2-add_quantity_cart):active,
+input[type='submit']:not(.vm2-add_quantity_cart).active,
+input[type='submit']:not(.vm2-add_quantity_cart).disabled,
+input[type='submit']:not(.vm2-add_quantity_cart)[disabled],
+input[type='button']:hover,
+input[type='button']:active,
+input[type='button'].active,
+input[type='button'].disabled,
+input[type='button'][disabled],
+submit:hover,
+submit:active,
+submit.active,
+submit.disabled,
+submit[disabled] {
+  color: #fff;
+  background-color: #475577;
+  *background-color: #3d4a67;
+}
+.btn-danger:active,
+.btn-danger.active,
+.btn-primary:active,
+.btn-primary.active,
+button:active,
+button.active,
+input[type='submit']:not(.vm2-add_quantity_cart):active,
+input[type='submit']:not(.vm2-add_quantity_cart).active,
+input[type='button']:active,
+input[type='button'].active,
+submit:active,
+submit.active {
+  background-color: #343e57 \9;
+}
+.btn-danger:hover,
+.btn-primary:hover,
+button:hover,
+input[type='submit']:not(.vm2-add_quantity_cart):hover,
+input[type='button']:hover,
+submit:hover {
+  background: #444;
+}
+#sp-purchase-wrapper .vina_purchase .bg-inner:before {
+  background: #475577;
+  filter: alpha(opacity=50);
+  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=50);
+  opacity: 0.5;
+  -moz-opacity: 0.50;
+}
+#sp-purchase-wrapper .btn {
+  color: #475577;
+}
+#sp-position3 .owl-item .title a {
+  color: #475577 !important;
+}
+#sp-position3 .owl-item:hover .readmore a {
+  background: #475577;
+}
+.jshop_categ .short_des a:last-child {
+  background: #475577;
+}

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.3" type="module" client="site" method="upgrade">
+	<name>JE Background</name> 
+    <version>3.3</version>
+    <creationDate>February, 2015</creationDate>
+    <author>jExtensions.com</author>
+    <authorEmail>support@jExtensions.com</authorEmail>
+    <authorUrl>http://jExtensions.com</authorUrl>
+    <copyright>Copyright 2015 - jExtensions.com</copyright>
+    <license>GNU/GPL</license>
+	<description><![CDATA[
+	<h1 class="sub-heading">JE Custom Background</h1>	
+	<div class="description">Download more free extensions from <a href="http://jextensions.com/" target="_blank">jExtensions.com</a><br/>
+	Need help? <a href="http://jextensions.com/custom-background-module/" target="_blank">Click here to visit the support page</a>.<br/>
+	</div>
+		]]>
+	</description>
+
+	<files>
+		<filename module="mod_je_background">mod_je_background.php</filename>
+		<filename>index.html</filename>
+		<folder>css</folder>
+		<folder>php</folder>
+		<folder>js</folder>
+	</files>
+
+	<config>
+		<fields name="params" addfieldpath="/modules/mod_je_background/php">
+		<fieldset name="basic">
+				<field name="bgImage" label="Background Image" type="media"  description="Choose an image." />
+				<field name="bgColor" type="jscolor" default="#ffffff" label="Background Color" description="Choose color of the background." />
+				<field type="asset" />
+		</fieldset>
+
+	</fields>
+	</config>
+</extension>

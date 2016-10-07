@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.4" type="module" client="site" method="upgrade">
+	<name>JE Bar</name> 
+    <version>3.4</version>
+    <creationDate>April, 2015</creationDate>
+    <author>jExtensions.com</author>
+    <authorEmail>support@jExtensions.com</authorEmail>
+    <authorUrl>http://jExtensions.com</authorUrl>
+    <copyright>Copyright 2015 - jExtensions.com</copyright>
+    <license>GNU/GPL</license>
+	<description><![CDATA[
+	<h1 class="sub-heading">JE Sticky Horizontal Bar</h1>	
+	<div class="description">Download more free extensions from <a href="http://jextensions.com/" target="_blank">jExtensions.com</a><br/>
+	Need help? <a href="http://jextensions.com/sticky-horizontal-bar-module-joomla/" target="_blank">Click here to visit the support page</a>.<br/>
+	<small>Credits: <a href="http://toddmotto.com/jbar-plugin-the-jquery-call-to-action-bar/" target="_blank">ToddMotto</a></small>
+	</div>
+		]]>
+	</description>
+
+	<files>
+		<filename module="mod_je_bar">mod_je_bar.php</filename>
+		<filename>index.html</filename>
+		<folder>css</folder>
+		<folder>php</folder>
+		<folder>js</folder>
+	</files>
+
+	<config>
+		<fields name="params" addfieldpath="/modules/mod_je_bar/php">
+		<fieldset name="basic">
+				<field name="jQuery" type="list" default="1" label="jQuery" description="Enable or Disable the latest jQuery version. Make sure that jQuery is loaded only once on your website.">
+					<option value="0">Disable</option>
+					<option	value="1">Enable</option>
+				</field>
+				<field name="Button" label="Button Text" type="text"  description="Add button text here." />
+				<field name="ButtonUrl" label="Button Link" type="text"  description="Add button link here." />
+				<field name="ButtonTarget" type="list" default="_self" label="Button Open Link" description="Choose the target of the button link here.">
+					<option value="_blank">New Window</option>
+					<option	value="_self">Same Window</option>
+				</field>	
+				<field name="Message" label="Message Text" type="textarea" filter="safehtml"  cols="30" rows="5" default="" description="Add your message here." />
+				<field name="BarState" type="list" default="_self" label="Bar State" description="">
+					<option value="open">Open</option>
+					<option	value="close">Close</option>
+				</field>
+				<field name="fontStyle" type="text" default="Open+Sans" label="Google Font Style" description="" />	
+				<field name="fontSize" type="text" default="14px" label="Font Size" description="" />	
+				<field name="barBgColor" type="jscolor" default="#DB5903" label="Bar Background Color" description="" />
+				<field name="barTextColor" type="jscolor" default="#ffffff" label="Bar Text Color" description="" />
+				<field name="buttonBgColor" type="jscolor" default="#444444" label="Button Background Color" description="" />
+				<field name="buttonTextColor" type="jscolor" default="#ffffff" label="Button Text Color" description="" />
+				<field name="buttonHoverBg" type="jscolor" default="#000000" label="Button Hover Background" description="" />
+				<field name="buttonHoverText" type="jscolor" default="#DB5903" label="Button Hover Text" description="" />
+				<field name="borderColor" type="jscolor" default="#ffffff" label="Border Color" description="" />
+				<field name="borderSize" type="text" default="3px" label="Border Width" description="" />
+				
+				<field type="asset" />
+		</fieldset>
+
+	</fields>
+	</config>
+</extension>

@@ -1,0 +1,624 @@
+/**
+ * @package Sample Data Vina
+ * @author VinaGecko.com http://VinaGecko.com
+ * @copyright Copyright (C) 2014 www.VinaGecko.com
+ * @license http://www.gnu.org/licenseses/gpl-3.0.html GNU/GPL
+*/
+
+@import 'variables';
+@import 'mixins';
+
+// Button
+.btn-primary(@btnPrimaryBackground: @btnPrimaryBackground) {
+  .buttonBackground(@btnPrimaryBackground, spin(@btnPrimaryBackground, 0%));
+}
+
+.nav-list>.active>a, .nav-list>.active>a:hover, .nav-list>.active>a:focus {
+	color: @link_color!important;
+	text-shadow: 0 0px 0 rgba(0,0,0,0.2);
+	background-color: transparent;
+}
+//Link color
+a:not(.btn) {	
+	color: @link_color;
+	&:hover {		
+		color: @link_color;
+	}
+}
+.header{
+	color: @link_color;
+}
+.text_color {
+	color: @link_color;
+}
+.bg_color {
+	background: @link_color;
+}
+.jshop_price {
+	color: @link_color;
+}
+.tags {
+	.label {
+		background: @link_color;
+	}
+}
+body {
+	color:@text_color;
+	&.bg {
+		background: @bg_color;
+	}
+}
+// Left, Right
+#sp-left,
+#sp-right {	
+	.module {
+		ul {
+			li {
+				&:hover {
+					a {
+						color: @link_color;
+					}
+				}
+			}
+			.jshop_menu_level_0_a,
+			.jshop_menu_level_1_a,
+			.jshop_menu_level_2_a {
+				li {
+					a {
+						color: @link_color;
+					}
+				}
+			}
+		}		
+		.jshop_menu_level_0_a{					
+			a {
+				color: @link_color;
+			}				
+		}			
+		.jshop_menu_level_0 {
+			&:hover {
+				a {
+					color: @link_color;
+				}
+			}
+		}
+		.tagspopular {
+			ul {
+				li {
+					background: @link_color;					
+				}
+			}
+		}
+	} 		
+}
+//Module Cart
+#jshop_module_cart {
+	.cart-inner {
+		background-image: url(../../images/presets/@{preset}/bg-cart.png);
+		.cart-view {
+			i{
+				color: @link_color;											
+			}
+			&:hover {	
+				i{							
+					color: darken(@link_color,20%);				
+				}
+			}			
+		}
+	}
+}
+//Menu
+#sp-menu-wrapper {
+	.sp-menu-group {
+		.sp-menu-group-title {
+			span {
+				&.menu-title {
+					color: @link_color;
+				}
+			}
+		}						
+	}
+}
+#sp-menu-wrapper {
+	background: @link_color;
+}
+#sp-menu-wrapper {
+	.vina-cmenu-jshopping {
+		> ul {		
+			> li {
+				&.active,
+				&:hover {
+					> a {
+						color: @link_color;
+					}
+					&:after {
+						border-top-color: @link_color;
+					}
+					> ul {
+						&:after {
+							border-bottom-color: @link_color;
+						}						
+					}
+				}				
+			}
+			li {
+				&.has-sub {
+					> ul {
+						> li {
+							&:hover {
+								> a {
+									background: @link_color;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		ul {
+			ul {				
+				li{
+					&.has-sub {
+						&:hover {
+							&:after {
+								border-left-color: @link_color;
+							}
+						}							
+					}
+					&.active {						
+						> a {
+							color: @link_color;
+						}
+						&:after {
+							border-left-color: @link_color!important;
+						}						
+					}
+					&:hover {
+						> a {
+							color: @white!important;
+						}
+					}
+				}																							
+			}
+		}
+	}
+}
+#sp-main-menu {
+ 	ul { 	
+ 		&.level-0 {
+ 			> li {				
+				&:hover,
+				&.active {
+					background-color: @link_color;
+					> a {
+						color: @white;						
+					}
+				}					
+			}
+		}
+	}	
+}
+.vina-menu {
+	background: @link_color !important;
+	&:hover {
+		background: @link_color !important;
+	}
+}
+.vina-menu-small {
+	background: @link_color !important;
+	&:hover {
+		background: @link_color !important;
+	}
+}
+.sp-mobile-menu {
+	background: #000;
+	ul {
+		li {
+			a {
+				color: #fff;
+				&:hover {
+					color: @link_color !important;
+				}
+			}
+		}
+	}
+	>ul {
+		>li {
+			border-bottom: 1px solid #333;
+			&:last-child {			
+				border: none;
+			}
+			ul.collapse {
+				li {
+					background: #333;
+				}
+				ul{
+					li {
+						background: #444;
+					}
+				}
+			}
+		}
+	}
+}
+
+//header
+#sp-header-wrapper {
+	//Logo
+	.logo{
+		background-image:url(../../images/presets/@{preset}/logo.png);
+	}
+}
+
+#sp-feature-wrapper {	
+	//Link
+	a:not(.btn){
+		color:lighten(@link_color, 20%);
+		 
+		&:hover{
+		   color:lighten(@link_color, 40%);
+		}
+	}
+	
+}
+#sp-feature {
+	.camera_caption {
+		h3 {
+			color: @link_color;	
+		}	
+	}
+}
+#sp-feature-wrapper {
+	#sp-feature {
+		.camera_caption {
+			a {
+				&.morebutton {					
+					&:hover {
+						color: @link_color;
+					}
+				}
+			}
+		}
+	}	
+	// Vina Jssor Images Slider
+	.vina-jssor-image-slider {
+		.vina-caption.default {			
+			h3,
+			.vina_title {
+				color: @link_color!important;
+			}			
+			.btn {
+				background: @link_color;				
+			}
+		}
+	}
+}
+//Position2
+#sp-position2 {
+	.vina-scroller-jshopping {
+		.toolbar {	
+			.left,
+			.right {								
+				&:hover {
+					i {
+						background-color: @link_color;										
+					}
+				}
+			}
+		}
+	}
+}
+.online-shipping {	
+	.online-shipping-wrapper {
+		&:hover {
+			.img-circle {
+				background-color: @link_color;
+				border-color: @link_color;				
+				color: @white;
+				a {
+					color: @white;
+				}
+			}
+		}
+	}
+}
+.product-hover {				
+	.img-circle {			
+		.buttons {										
+			a {
+				color: @white!important;
+				&:hover {
+					color: @link_color!important;
+				}
+			}
+		}
+	}
+}
+#vina-scroller-jshopping145 {
+	.slide {
+		.vina-name {
+			a { 
+				color: @link_color!important;
+			}
+		}		
+	}
+}
+/* Detail Shop */
+.jshop {
+	&.productfull {		
+		.vina_price {			
+			#block_price {						
+				color: @link_color;
+			}
+		}		
+	}
+}
+//Widgets
+.module {
+	&.highlighted {
+		background:#3498DB;
+		a{
+			color:#fff !important;
+		}
+	}
+}
+
+/** Joomla Content **/
+.page-header {
+	color: @link_color;
+	a {
+		color: @link_color;
+	}
+}
+.progress-striped .bar {
+	background-color: @link_color;
+}
+#vina_about_us {
+	.carousel {
+		.item {
+			.incon_bg {
+				background: @link_color;
+			}
+		}
+		.carousel-control {
+			color: @link_color;
+		}
+		&:hover {
+			.carousel-control {
+				&:hover {
+					background: @link_color;
+				}
+			}
+		}
+	}
+	.skill {
+		ul {
+			li {
+				border-left: 2px solid @link_color;;
+			}
+		}
+	}
+}
+#vina_company {
+	.img-polaroid {
+		.info_team {
+			ul {
+				li {
+					a {
+						&:hover {
+							background: @link_color;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+#vina_pricing_table {
+	.pricing_table {
+		.thumbnail {
+			button {
+				background: @link_color;
+			}
+		}
+	}
+}
+#vina_contact_us {
+	ul.social {
+		li {
+			a {
+				border: 4px solid lighten(@link_color, 30%);
+				background: @link_color;
+				&:hover {
+					border: 4px solid @link_color;
+					em {
+						color: @link_color;
+					}
+				}
+			}
+		}
+	}
+	.map {
+		span {
+			em {
+				color: @link_color;
+			}
+		}
+	}
+}
+
+/** Category View**/
+.category {
+	.items-row {
+		.item {
+			.entry-meta.muted {
+				[class^="icon-"], [class*=" icon-"] {
+					color: @link_color;					
+				}
+			}
+		}
+	}
+}
+
+.vina-tag {
+	background: @link_color;
+	.box-shadow(0 4px 0 0 darken(@link_color,10%));
+	color: @white !important;
+	&:hover {
+		background: @link_color !important;
+	}
+	&:before {
+		background: @link_color;
+		.box-shadow(0 4px 0 0 darken(@link_color,10%));
+	}
+	&:after {
+		.box-shadow(3px 3px 0 0 darken(@link_color,10%) inset);
+	}
+}
+
+.vina-icon {
+	ul {
+		li {
+			p {
+				&:hover {
+					i {
+						color: @link_color;
+					}
+				}
+			}
+		}
+	}
+}
+
+/*who's online*/
+.vina-online {
+	.header {
+		&:before {
+			color: @link_color;
+		}
+	}
+}
+/*login form*/
+#login-form {		
+	input[type="checkbox"]  {		
+		&:checked  + label {			
+			&::after {				
+				color: @link_color;				
+			}
+		}
+	}
+}
+#login-form {
+	input:not([type='checkbox']) {
+		&:active,&:focus {
+			.box-shadow(inset 8px 0 0 @link_color);
+		}
+	}
+}
+
+.icon-color {
+	&:before {
+		color: @link_color;
+	}
+}
+
+
+/*vina news*/
+.vina-news {
+	li {
+		&:before {
+			color: @link_color;
+		}
+	}
+}
+#sp-bottom-wrapper{
+	//Link
+	a:not(.btn){
+		color: @text_color;
+
+		&:hover{
+		   color:@link_color;
+		   background: transparent;		  
+		}
+	}
+	li {
+		color: @link_color;
+	}
+}
+#sp-footer-wrapper {
+	background: #191e23;
+	color:@white;
+	h3{
+		color:@white;
+	}
+}
+.sp-border {
+	border-top:1px solid darken(@link_color, 40%);
+	&::after {
+		background:darken(@link_color, 23%);
+	}
+}
+//Social Icons
+.btn{
+	&.social{
+		&:hover{		
+			background: @link_color;
+		}		
+	}
+}
+/*Buttons*/
+.btn-danger,.btn-primary, button, input[type='submit']:not(.vm2-add_quantity_cart), input[type='button'], submit {
+	.btn-primary(spin(@link_color, 0%));
+	background-image: none;
+	box-shadow: none;
+	text-shadow: none;
+	border: 0px solid #bbb;
+	&:hover {
+		background: #444;
+	}
+}
+/* Purchase Wrapper*/
+#sp-purchase-wrapper {	
+	.vina_purchase {
+		.bg-inner {
+			&:before {						
+				background: @link_color;
+				filter: alpha(opacity=50);
+				filter: progid:DXImageTransform.Microsoft.Alpha(opacity=50);
+				opacity:0.5;
+				-moz-opacity: 0.50;
+			}
+		}
+	}	
+	.btn {		
+		color: @link_color;		
+	}
+}
+
+/* sp-other-wrapper */
+#sp-position3 {
+	.owl-item {
+		.title {
+			a {				
+				color: @link_color !important;
+			}
+		}
+		&:hover {
+			.readmore {		
+				a {
+					background: @link_color;
+				}
+			}
+		}
+	}
+}
+/* JShopping - List Categories */
+.jshop_categ {
+	.short_des {
+		a {
+			&:last-child {				
+				background: @link_color;				
+			}
+		}
+	}
+}

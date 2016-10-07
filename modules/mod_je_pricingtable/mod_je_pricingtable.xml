@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.3" type="module" client="site" method="upgrade">
+	<name>JE Pricing Table</name> 
+    <version>3.3</version>
+    <creationDate>April, 2015</creationDate>
+    <author>jExtensions.com</author>
+    <authorEmail>support@jExtensions.com</authorEmail>
+    <authorUrl>http://jExtensions.com</authorUrl>
+    <copyright>Copyright 2015 - jExtensions.com</copyright>
+    <license>GNU/GPL</license>
+	<description><![CDATA[
+	<h1 class="sub-heading">JE Pricing Table</h1>
+	<div class="description">Download more free extensions from <a href="http://jextensions.com/" target="_blank">jExtensions.com</a><br/>
+	Need help? <a href="http://jextensions.com/responsive-pricing-table-joomla/" target="_blank">Click here to visit the support page</a>.<br/>
+	<span class="credits">Credits: <a href="http://wegraphics.net/downloads/free-responsive-pricing-table/" target="_blank" >WeGraphics</a></span>
+	</div>
+		]]>
+	</description>
+	<files>
+		<filename module="mod_je_pricingtable">mod_je_pricingtable.php</filename>
+		<filename>index.html</filename>
+		<filename>color.php</filename>
+		<folder>css</folder>
+		<folder>js</folder>
+		<folder>php</folder>
+	</files>
+
+	<config>
+		<fields name="params" addfieldpath="/modules/mod_je_pricingtable/php">
+		<fieldset name="basic">
+		
+		<field name="fontStyle" type="text" default="Open+Sans" label="Google Font Style" description="Add Google font style here." />
+		
+		
+		<field name="tableBg" type="jscolor" default="#ffffff" label="Table Background" description="" />
+		<field name="tableText" type="jscolor" default="#979797" label="Table Text Color" description="" />
+		
+		<field name="mainColor" type="jscolor" default="#3e4f6a" label="Main Color" description="" />
+		<field name="mainText" type="jscolor" default="#fffff" label="Main Text Color" description="" />
+		
+		<field name="buttonBg" type="jscolor" default="#979797" label="Button Background" description="" />
+		<field name="buttonText" type="jscolor" default="#ffffff" label="Button Text" description="" />
+		
+		
+		<field name="featuredColor" type="jscolor" default="#F7814D" label="Featured Color" description="" />
+		<field name="featuredText" type="jscolor" default="#ffffff" label="Featured Text Color" description="" />
+		
+		<field type="spacer" name="&lt;div class=&quot;sub-heading&quot;&gt;Font Size&lt;/div&gt;" />
+		<field name="planTitleSize" label="Plan Title" default="35px" type="text"  description="" />
+		<field name="planPriceSize" label="Plan Price" default="25px" type="text"  description="" />
+		<field name="planFeaturesSize" label="Plan Features" default="14px" type="text"  description="" />
+		<field name="planButtonSize" label="Plan Button" default="20px" type="text"  description="" />
+
+			<field type="asset" />
+		</fieldset>	
+		
+		
+		<fieldset name="plans" label="&gt;&gt;&gt; Manage Plans &lt;&lt;&lt;">	
+			
+			<!-- Plan 1 -->
+			<field type="spacer" name="&lt;div class=&quot;sub-heading&quot;&gt;Plan #1&lt;/div&gt;" />
+			<field name="planName1" label="Plan Name" type="text"  description="" />
+			<field name="planBest1" label="Best Plan" type="radio" default="0" class="btn-group btn-group-yesno" description="">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+			</field>			
+			<field name="planPrice1" label="Pricing" type="text"  description="" />
+			<field name="planTerm1" label="Pricing Term" type="text"  description="" />
+			<field name="planFeatures1" label="Features" type="textarea" filter="safehtml"  cols="30" rows="10" default="" description="" />
+			<field name="planButton1" label="Button Text" type="text"  description="" />
+			<field name="planLink1" label="Button Link" type="text"  description="" />
+			
+			<!-- Plan 2 -->
+			<field type="spacer" name="&lt;div class=&quot;sub-heading&quot;&gt;Plan #2&lt;/div&gt;" />
+			<field name="planName2" label="Plan Name" type="text"  description="" />
+			<field name="planBest2" label="Best Plan" type="radio" default="0" class="btn-group btn-group-yesno" description="">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+			</field>			
+			<field name="planPrice2" label="Pricing" type="text"  description="" />
+			<field name="planTerm2" label="Pricing Term" type="text"  description="" />
+			<field name="planFeatures2" label="Features" type="textarea" filter="safehtml"  cols="30" rows="10" default="" description="" />
+			<field name="planButton2" label="Button Text" type="text"  description="" />
+			<field name="planLink2" label="Button Link" type="text"  description="" />
+			
+			<!-- Plan 3 -->
+			<field type="spacer" name="&lt;div class=&quot;sub-heading&quot;&gt;Plan #3&lt;/div&gt;" />
+			<field name="planName3" label="Plan Name" type="text"  description="" />
+			<field name="planBest3" label="Best Plan" type="radio" default="0" class="btn-group btn-group-yesno" description="">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+			</field>			
+			<field name="planPrice3" label="Pricing" type="text"  description="" />
+			<field name="planTerm3" label="Pricing Term" type="text"  description="" />
+			<field name="planFeatures3" label="Features" type="textarea" filter="safehtml"  cols="30" rows="10" default="" description="" />
+			<field name="planButton3" label="Button Text" type="text"  description="" />
+			<field name="planLink3" label="Button Link" type="text"  description="" />
+
+			<!-- Plan 4 -->
+			<field type="spacer" name="&lt;div class=&quot;sub-heading&quot;&gt;Plan #4&lt;/div&gt;" />
+			<field name="planName4" label="Plan Name" type="text"  description="" />
+			<field name="planBest4" label="Best Plan" type="radio" default="0" class="btn-group btn-group-yesno" description="">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+			</field>			
+			<field name="planPrice4" label="Pricing" type="text"  description="" />
+			<field name="planTerm4" label="Pricing Term" type="text"  description="" />
+			<field name="planFeatures4" label="Features" type="textarea" filter="safehtml"  cols="30" rows="10" default="" description="" />
+			<field name="planButton4" label="Button Text" type="text"  description="" />
+			<field name="planLink4" label="Button Link" type="text"  description="" />
+
+			<!-- Plan 5 -->
+			<field type="spacer" name="&lt;div class=&quot;sub-heading&quot;&gt;Plan #5&lt;/div&gt;" />
+			<field name="planName5" label="Plan Name" type="text"  description="" />
+			<field name="planBest5" label="Best Plan" type="radio" default="0" class="btn-group btn-group-yesno" description="">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+			</field>			
+			<field name="planPrice5" label="Pricing" type="text"  description="" />
+			<field name="planTerm5" label="Pricing Term" type="text"  description="" />
+			<field name="planFeatures5" label="Features" type="textarea" filter="safehtml"  cols="30" rows="10" default="" description="" />
+			<field name="planButton5" label="Button Text" type="text"  description="" />
+			<field name="planLink5" label="Button Link" type="text"  description="" />
+			
+		</fieldset>	
+	</fields>
+	</config>
+</extension>

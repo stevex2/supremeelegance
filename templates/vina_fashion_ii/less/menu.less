@@ -1,0 +1,376 @@
+/**
+ * @package Sample Demo Vina
+ * @author VinaGecko.com http://VinaGecko.com
+ * @copyright Copyright (C) 2014 www.VinaGecko.com
+ * @license http://www.gnu.org/licenseses/gpl-3.0.html GNU/GPL
+*/
+a,
+li,
+ul {
+	list-style: none;
+}
+.block_item {
+	float: left;
+	.center;
+}
+ /* Menu */
+ b {
+	&.caret {
+		border-top: 4px solid @white;		
+	}
+}
+.menu-hover {	
+	text-decoration: none;
+	background-color: #e5e5e5;
+	background-image: none;	
+	background-repeat: repeat-x;
+}
+#sp-main-menu {
+ 	ul {
+ 		list-style:none;
+ 		margin:0;
+ 		&.level-0 {
+ 			> li {
+				//Parent List Item
+				display:inline-block;
+				margin:0 5px 0 0;
+				padding:0;
+				position:relative;
+
+				//Anchor Link
+				>a {
+					display:block;
+					margin:0;
+					padding:10px;
+					color: #666;
+					.uppercase;
+					//Menu Item Description
+					.menu-desc {
+						font-size:11px;
+						color:#999;
+						display:block;
+					}.									
+				}				
+				//Animation
+				.transition(all 200ms);			
+			}
+		}
+	}
+	
+	//Menu Items for Dropdown
+	li{
+		li:not(.sp-menu-group) {
+			display:block;
+			border-top:1px solid #eee;
+			position:relative;
+			text-transform: capitalize;
+
+			&:first-child {
+				border-top: none;
+			}
+			a {
+				display:block;
+				font-size:12px;
+				font-weight:400;
+				line-height:normal;
+				text-decoration:none;
+				padding:10px;
+				color:#999;
+			}
+			//Arrow
+			&.parent{
+				>a{
+					span.menu{
+						position: relative;
+						padding-right: 20px;
+						display: block;
+					}
+					&:after{
+						content: "\f054";
+						font-family:FontAwesome;
+						font-size:10px;
+						font-weight:normal;
+						position:absolute;
+						right:10px;
+						top:15px;
+					}
+				}
+			}
+ 			//Hover and active
+ 			&:hover,
+ 			&.active{
+ 				background:#f5f5f5;
+ 			}
+			//Animation
+			.transition(all 200ms);
+		}
+	}
+	//Megamenu Groups
+	div.sp-menu-group {
+		margin:10px;
+		a.sp-menu-group{
+			display: block;
+			padding: 10px;
+			border-bottom:1px solid #eee;
+			color: #666;
+			.menu-title {
+				text-transform:uppercase;
+			}
+		}
+		
+		//Module Styling inside Menu
+		.sp-menu-group-content {
+			.module{
+				margin:0;
+				padding:10px 0 0;
+				text-transform: none;
+				font-weight: normal;
+				font-size: 14px;
+				h4{
+					font-size: 14px;
+				}
+			}
+		}
+	}
+}
+
+//Submenu
+.sp-submenu {
+	position: absolute;
+	top:0;
+	visibility:hidden;
+	opacity:0;
+	z-index: 0;
+	margin-top:30px;  // 30
+	.transition(~'margin 100ms, visibility 100ms, opacity 100ms');
+	&.open {
+		z-index:99999;
+		visibility:visible;
+		opacity:1;
+		margin-top:0;
+		.transition(~'margin 300ms, visibility 300ms, opacity 300ms');
+	}
+	.sp-submenu-wrap{
+		background: #fff;
+		.box-shadow(~'0 3px 5px 0 rgba(0,0,0,.2)');
+	}
+	.megacol {
+		float:left;
+	}
+
+	//Submenu Children
+	&.sub-level-child {
+		margin-left:30px;  // 30
+		margin-top: 0;
+		&.open {
+			margin-left:0px;
+		}
+	}
+
+}
+.sp-mobile-menu {
+	z-index: 10;
+}
+.sp-mobile-menu{
+	ul {
+		width: 100% !important;
+		li {
+			background:rgba(0, 0, 0, 0.9);
+			a {
+				color: @white !important;
+			}
+		}
+	}
+	ul {
+		li:last-child  {
+			margin-bottom: 10px;
+		}
+	}
+}
+
+.vina-menu {
+	position: absolute !important;
+	right: 20px;
+	padding: 10px 16px !important;
+	.border-radius(0);
+	width: auto !important;
+	margin: 0 !important;
+	&:focus {
+		.box-shadow(none);
+		outline: none;
+	}
+}
+.vina-menu-small {
+	position: absolute !important;
+	right: 5px;
+	top: 5px;
+	padding: 3px 8px !important;
+	.border-radius(0 !important);
+	width: auto !important;
+	margin: 0 !important;
+	&:focus {
+		.box-shadow(none);
+		outline: none;
+	}
+}
+.ltr .sp-submenu{
+	left:0;
+}
+.rtl .sp-submenu{
+	right:0;
+}
+ //Language Direction 
+ .rtl{
+ 	#sp-main-menu {
+ 		float:right;
+ 		ul {
+ 			&.level-0 {
+ 				> li {
+
+ 					&:hover,
+ 					&.active{
+ 						>a {
+ 							&:after{
+ 								margin:  0 -10px 0 0;
+ 							}	
+ 						}
+ 					}	
+
+ 					&.parent{
+ 						>a{
+ 							span.menu{
+ 								padding:0 10px;
+ 								padding-right: 0;	
+								&:after {
+									right: inherit;
+									left: 0;
+								}
+ 							}	
+ 						}
+ 					}	
+ 				}
+ 			}	
+ 		}
+
+ 		//Menu Items for Dropdown
+ 		li{
+ 			li:not(.sp-menu-group) {
+ 				&.parent{
+ 					>a{
+						&:after {
+							right: inherit;
+							left: 10px;
+						}
+ 						span.menu{
+ 							padding-right: 0;
+ 							padding-left: 20px;
+ 						}
+ 					}
+ 				}					
+ 			}
+ 		}	
+ 	}
+ }
+
+ //fixed menu
+.menu-fixed{	
+	top:0;
+	width: 100%;	
+	.animation(~'fadeInDown 900ms');
+}
+.fixed .hidden-desktop {
+ 	display: none;
+}
+
+// Category Menu
+#sp-menu-wrapper {		
+	#indicatorContainer {
+		display: none;
+	}	
+	.vina-cmenu-jshopping {
+		background: transparent;
+		> ul {
+			z-index: 10;
+			background: transparent;
+			> li {
+				> a {
+					font-weight: normal;
+					line-height: 22px;
+					padding: 20px 25px;				
+				}
+				&#menu-button {
+					&:hover,
+					&.active {
+						a {
+							color: @white;
+							background: transparent!important;
+						}
+					}
+				}
+				&:hover,
+				&.active {
+					> ul {
+						top: 100%;
+					}
+					a {
+						background: #E5E5E5;
+					}
+				}				
+				&.has-sub {
+					&:after {
+						right: 6px;
+						top: 28px;
+					}
+				}
+			}
+			&.level0 {
+				&.open {
+					> li {
+						&:hover {
+							a {
+								background: #E5E5E5;
+							}					
+						}
+						&.active {
+							a {
+								background: #ccc;
+							}					
+						}
+					}
+				}
+			}
+		}
+		ul {
+			ul {
+				li {
+					a {
+						color: #333333;
+					}
+				}
+			}
+		}
+	}
+}
+/* Menu Group Jshopping */
+#sp-main-menu {	
+	.product-hover {
+		padding-top: 25px;
+		.img-circle {
+			width: 70px;
+			height: 70px;
+			.buttons {
+				.add-cart {
+					line-height: 35px;
+					a {						
+						&.button_buy {
+							top: 6px;
+						}
+					}
+				}
+			}
+			a {
+				font-size: 11px;
+			}
+		}
+	}	
+}
